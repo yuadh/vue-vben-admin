@@ -21,7 +21,7 @@ import { deepMerge } from '@/utils';
 import { Persistent } from '@/utils/cache/persistent';
 
 // Initial project configuration
-export function initAppConfigStore() {
+export function initAppConfigStorTest() {
   const localeStore = useLocaleStore();
   const appStore = useAppStore();
   let projCfg: ProjectConfig = Persistent.getLocal(PROJ_CFG_KEY) as ProjectConfig;
